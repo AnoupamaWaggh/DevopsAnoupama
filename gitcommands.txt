@@ -1,0 +1,10 @@
+       git init
+    7  yum install git
+    8  git init
+   10  git status
+   11  git add Linuxcommands.txt
+   12  git status
+   13  git commit -m"My first commit"
+   14  git status
+   15  git remote add origin https://github.com/AnoupamaWaggh/DevopsAnoupama.gi
+   16  git push -u origin master
