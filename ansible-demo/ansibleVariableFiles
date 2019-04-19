@@ -1,0 +1,16 @@
+---
+- hosts: servers
+  user: ec2-user Server Auth
+  sudo: true
+
+  vars:
+    pack_name: httpd
+
+  vars_files:
+    - web_vars.yml
+
+  tasks:
+    - name: Install {{ pack_name }}
+      yum: pkg={{ pack_name }} state=installed
+      - name: Start {{serv_name }}
+      service: name={{ serv_name }} state=started
