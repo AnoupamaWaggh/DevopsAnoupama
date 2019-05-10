@@ -1,0 +1,5 @@
+---
+# tasks file for customrole
+- name: print ip address of the machine
+  debug: var=ansible_all_ipv4_addresses
+  debug: var=ansible_default_ipv4.address
