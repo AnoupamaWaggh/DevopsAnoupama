@@ -1,0 +1,20 @@
+ 1  cd /root/.ssh/
+    2  ls -ltr
+    3  vi authorized_keys
+    4  cat authorized_keys
+    5  ifconfig
+    6  cd /opt/
+    7  ls
+    8  cd DevopsAnoupama/
+    9  history
+pwd
+    2  mkdir -p /opt/DevopsAnoupama && cd /opt/DevopsAnoupama
+    3  ls
+    4  pwd
+    5  ls -ltr
+    6  git init
+    7  yum install git
+    8  git init
+    9  history
+
+
