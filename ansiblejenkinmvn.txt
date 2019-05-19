@@ -1,0 +1,653 @@
+    1  sudo apt-get update
+    2  sudo apt-get install software-properties-common
+    3  sudo apt-add-repository -yes
+    4  sudo apt-add-repository --yes
+    5  cd /opt/
+    6  sudo apt-get install software-properties-common
+    7  sudo apt-add-repository --yes --update ppa:ansible/ansible
+    8  ll
+    9  sudo apt-get install ansible
+   10  sudo apt-get upgrade -y
+   11  sudo apt-get install ansible
+   12  sudo apt-add-repository --yes --update ppa:ansible/ansible
+   13  sudo apt-get install ansible -y
+   14  sudo apt-get install python -y
+   15  ll /etc/ansible/
+   16  sudo apt update -y
+   17  apt list --upgradable
+   18  sudo apt-get update -y
+   19  sudo apt update -y
+   20  apt list --upgradable
+   21  yum -y update
+   22  apt install yum
+   23  yum -y update
+   24  apt list --upgradable
+   25  yum update -y
+   26  sudo apt-get update -y
+   27  sudo apt-get install openjdk-8-jdk
+   28  wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+   29  sudo wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+   30  sudo echo deb
+   31  sudo echo "deb http://pkg.jenkins-ci.org/debian binary/" | sudo tee -a /etc/apt/sources.list.d/jenkins.list
+   32  sudo apt-get update
+   33  sudo apt-get install jenkins
+   34  sudo service jenkins status
+   35  service jenkins status
+   36  ll /etc/apt/sources.list
+   37  vi /etc/apt/sources.list
+   38  vi /etc/apt/sources.list.d/jenkins.list 
+   39  sudo ufw status
+   40  vi /var/lib/jenkins/secrets/initialAdminPassword
+   41  history
+   42  java -version
+   43  mvn -v
+   44  apt install maven
+   45  mvn -v
+   46  which maven
+   47  which mvn
+   48  mvn -v
+   49  sudo apt-get remove maven3
+   50  sudo add-apt-repository "deb http://ppa.launchpad.net/natecarlson/maven3/ubuntu precise main"
+   51  sudo apt-get update
+   52  sudo apt-get install maven3
+   53  sudo ln -s /usr/share/maven3/bin/mvn /usr/bin/mvn
+   54  sudo ln -s /usr/share/maven/bin/mvn /usr/bin/mvn
+   55  mvn -v
+   56  echo MAVEN_HOME
+   57  echo $MAVEN_HOME
+   58  echo $JAVA_HOME
+   59  which java
+   60  which mvn
+   61  java -version
+   62  mvn -version
+   63  echo $$
+   64  export MAVEN_HOME=/usr/bin/mvn
+   65  echo $MAVEN_HOME
+   66  ll /usr/share/
+   67  ls -ltr
+   68  ls -ltr /usr/lib/jvm/
+   69  ls -ltr /usr/lib/jvm/java-8-openjdk-amd64
+   70  ls -ltr /usr/lib/jvm/java-8-openjdk-amd64/jre/
+   71  ls -ltr /usr/lib/jvm/java-8-openjdk-amd64/jre/bin
+   72  export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
+   73  exho $MAVEN_HOME
+   74  echo $MAVEN_HOME
+   75  echo $JAVA_HOME
+   76  cd /opt/
+   77  git clone https://github.com/nvn17git/nvnshoppingcart.git
+   78  ll
+   79  cd nvnshoppingcart/
+   80  ls -ltr
+   81  mvn clean install
+   82  ls -ltr
+   83  cd target
+   84  ls -ltr
+   85  ansible --version
+   86  sudo apt-get install wget
+   87  wget https://bootstrap.pypa.io/get-pip.py
+   88  sudo apt-get install gcc libffi-devel python-devel openssl-devel
+   89  apt-get install python
+   90  cat /etc/apt/sources.list
+   91  vi /etc/apt/sources.list
+   92  sudo apt-get install gcc libffi-devel python-devel openssl-devel
+   93  sudo python get-pip.py
+   94  sudo pip install boto
+   95  sudo pip install boto3
+   96  cd ../..
+   97  git clone https://github.com/AnoupamaWaggh/DevopsAnoupama.git
+   98  cd DevopsAnoupama/
+   99  ll
+  100  cd ansible-demo/devops/
+  101  ll
+  102  cd ../../../
+  103  mkdir ansible-dev
+  104  cd ansible-dev/
+  105  mkdir roles
+  106  cd roles
+  107  ansible-galaxy init customrole
+  108  apt-get install tree
+  109  cd customrole/
+  110  tree
+  111  cd ../..
+  112  vi site.yml
+  113  cat site.yml 
+  114  vi site.yml
+  115  vi roles/customrole/tasks/main.yml 
+  116  ls -ltr
+  117  ansible-playbook site.yml 
+  118  ansible-playbook site.yml -vv
+  119  vi site.yml
+  120  ansible-playbook site.yml -vv
+  121  vi site.yml
+  122  ansible-playbook site.yml -vv
+  123  vi site.yml
+  124  vi roles/customrole/tasks/main.yml 
+  125  ansible-playbook site.yml -vv
+  126  vi roles/customrole/tasks/main.yml 
+  127  vi site.yml
+  128  ansible-playbook site.yml -vv
+  129  vi site.yml
+  130  vi roles/customrole/tasks/main.yml 
+  131  vi site.yml
+  132  vi ansible.cfg
+  133  mkdir roles
+  134  cd roles/
+  135  ll
+  136  cd ..
+  137  git clone https://github.com/maheshkharwadkar/devops
+  138  ll
+  139  cd devops/
+  140  ll
+  141  cd ansible/
+  142  ll
+  143  cd e2eproject/
+  144  ll
+  145  cd ../../../
+  146  ll
+  147  cd ansible-dev/
+  148  cp /opt/devops/ansible/e2eproject/roles/tomcat roles/
+  149  cp -rf /opt/devops/ansible/e2eproject/roles/tomcat roles/
+  150  cp -rf /opt/devops/ansible/e2eproject/roles/tomcat_aws/ roles/
+  151  cp /opt/devops/ansible/e2eproject/deploy.yml 
+  152  cp -r /opt/devops/ansible/e2eproject/deploy.yml .
+  153  ll
+  154  cp -r /opt/devops/ansible/e2eproject/get-pip.py .
+  155  ll
+  156  vi deploy.yml 
+  157  vi ansible.cfg 
+  158  vi roles/tomcat_aws/
+  159  service jenkins starts
+  160  service jenkins status
+  161  sudo su
+  162  cd /opt/
+  163  ls
+  164  cd DevopsAnoupama/
+  165  git pull
+  166  cd ..
+  167  ls
+  168  cd ansible-dev/
+  169  ll
+  170  cd /opt/
+  171  ll
+  172  cd ansible-dev/
+  173  ll
+  174  cd roles/tomcat_aws/
+  175  vi defaults/main.yml 
+  176  vi tasks/aws-ec2.yml 
+  177  cat defaults/main.yml 
+  178  cat tasks/aws-ec2.yml 
+  179  cd ../..
+  180  vi ansible.cfg 
+  181  cat ~/.ssh/server1.pem
+  182  ll ~/.ssh/
+  183  vi ~/.ssh/server1.pem
+  184  cat ~/.ssh/server1.pem
+  185  ll ~/.ssh/server1.pem
+  186  chmod 600 ~/.ssh/server1.pem
+  187  ll ~/.ssh/server1.pem
+  188  vi ansible.cfg 
+  189  vi deploy.yml 
+  190  ansible-playbook deploy.yml -vv
+  191  ansible-playbook deploy.yml
+  192  vi deploy.yml 
+  193  ansible-playbook deploy.yml -vv
+  194  vi /opt/ansible-dev/deploy.retry
+  195  vi deploy.yml 
+  196  vi /opt/ansible-dev/roles/tomcat_aws/tasks/aws-ec2.yml 
+  197  ansible-playbook deploy.yml -vv
+  198  vi ~/.ssh/server1.pem 
+  199  ansible-playbook deploy.yml -vv
+  200  --limit @/opt/ansible-dev/deploy.retry
+  201  vi roles/tomcat_aws/defaults/main.yml 
+  202  cat roles/tomcat/tasks/configure_tomcat.yml 
+  203  vi roles/tomcat_aws/tasks/aws-ec2.yml 
+  204  vi roles/tomcat_aws/defaults/main.yml 
+  205  ansible-playbook deploy.yml -vv
+  206  chmod 0400 ~/.ssh/server1.pem 
+  207  ansible-playbook deploy.yml -vv
+  208  vi ~/.ssh/server1.pem 
+  209  ansible-playbook deploy.yml -vv
+  210  cd /opt/ansible-dev/
+  211  ll
+  212  vi roles/tomcat_aws/defaults/main.yml 
+  213  vi roles/tomcat_aws/tasks/aws-ec2.yml 
+  214  ansible-playbook deploy.yml -vv
+  215  vi deploy.yml 
+  216  service tomcat status
+  217  ll ~/.ssh/
+  218  vi deploy.yml 
+  219  ll roles/tomcat
+  220  vi roles/tomcat/tasks/configure_tomcat.yml 
+  221  vi roles/tomcat/tasks/install_packages.yml 
+  222  vi roles/tomcat/tasks/create_users.yml 
+  223  cat ~/.ssh/known_hosts 
+  224  ll ~/.ssh/
+  225  ssh-keygen -t rsa
+  226  ll ~/.ssh/
+  227  ll
+  228  ssh-keygen -t rsa
+  229  ll ~/.ssh/
+  230  ansible-playbook deploy.yml -vv
+  231  cat ~/.ssh/known_hosts 
+  232  cat ansible.cfg 
+  233  ll ~/.ssh/
+  234  chmod 600 ~/.ssh/server1.pem 
+  235  vi ~/.ssh/server1.pem 
+  236  cat /etc/ansible/ansible.cfg 
+  237  vi /etc/ansible/ansible.cfg 
+  238  cat /etc/ansible/hosts 
+  239  vi /etc/ansible/hosts 
+  240  ansible-playbook deploy.yml -vv
+  241  ssh 172.31.28.135
+  242  ssh ubuntu@172.31.28.135
+  243  cat roles/tomcat/tests/inventory 
+  244  cat roles/tomcat/tests/test.yml 
+  245  ll roles/tomcat/tests/inventory 
+  246  which ansible
+  247  ansible --version
+  248  vi roles/tomcat/tasks/create_users.yml 
+  249  vi roles/tomcat/tasks/install_packages.yml 
+  250  pip freeze |grep ansible
+  251  ssh-add ~/.ssh/server1.pem 
+  252  ansible -m ping 172-32-19-243
+  253  ansible -c local -m ping 172.31.19.243
+  254  vi deploy.
+  255  vi deploy.yml 
+  256  vi roles/tomcat/tasks/main.yml 
+  257  vi roles/tomcat/defaults/main.yml 
+  258  vi roles/tomcat/tasks/install_packages.yml 
+  259  vi deploy.
+  260  vi deploy.yml 
+  261  cat ansible.cfg 
+  262  cat ~/.ssh/server1.pem
+  263  q!
+  264  cat /etc/hosts
+  265  cat /etc/ansible/hosts
+  266  localhost
+  267  vi /etc/ansible/hosts 
+  268  cat ~/.ssh/server1.pem
+  269  ll ~/.ssh/server1.pem
+  270  ansible-playbook deploy.yml -vv
+  271  ssh ubuntu@172.31.23.109
+  272  ssh root@172.31.23.109
+  273  ssh root@172.31.23.109 uptime
+  274  ansible all -i tests -m ping
+  275  ansible-playbook deploy.yml -vv
+  276  ansible all -vvv -m ping
+  277  vi /etc/ansible/hosts
+  278  vi /etc/ansible/hosts 
+  279  ansible-playbook deploy.yml -vv
+  280  vi /etc/ansible/hosts 
+  281  vi deplo
+  282  vi deploy.yml 
+  283  ansible all -m ping -vvv
+  284  vi /etc/ansible/aut
+  285  cat ~/.ssh/authorized_keys
+  286  vi /etc/ansible/hosts 
+  287  ansible all -m ping -vvv
+  288  ansible-playbook deploy.yml -vv
+  289  cat ~/.ssh/known_hosts 
+  290  hostname
+  291  ssh-keygen -R ip-172-31-19-243
+  292  cat /etc/hosts
+  293  ssh-keygen -f "/root/.ssh/known_hosts" -R [www.website.net]:4231
+  294  ll ~/.ssh/
+  295  sed -i '5d' ~/.ssh/known_hosts
+  296  ll ~/.ssh/
+  297  cat ~/.ssh/known_hosts 
+  298  vi ~/.ssh/known_hosts 
+  299  ansible-playbook deploy.yml -vv
+  300  cat ~/.ssh/known_hosts 
+  301  ssh-keyscan -t rsa,dsa -f list_of_hosts > ~/.ssh/known_hosts
+  302  cat /etc/ssh/ssh_config 
+  303  vi /etc/ssh/ssh_config 
+  304  vvi /etc/ansible/ansible.cfg 
+  305  vi /etc/ansible/ansible.cfg 
+  306  ssh -v ubuntu@172.31.31.137
+  307  vim ~/.ssh/config
+  308  vi /etc/ssh/sshd_config 
+  309  service sshd restart
+  310  service ssh restart
+  311  ansible-playbook deploy.yml -vv
+  312  ssh 172.31.22.16 -i ~/.ssh/server1.pem
+  313  ssh ununtu@172.31.22.16 -i ~/.ssh/server1.pem
+  314  vi /etc/ssh/sshd_config
+  315  vi /etc/hosts.allow
+  316  vi /etc/hosts.deny
+  317  ssh-keyscan demo >> ~/.ssh/known_hosts 
+  318  ssh-keyscan -t rsa,dsa HOST 2>&1 | sort -u - ~/.ssh/known_hosts > ~/.ssh/tmp_hosts
+  319  ll ~/.ssh/
+  320  vi /etc/ansible/hosts 
+  321  ssh 172.31.22.16 -i ~/.ssh/server1.pem
+  322  ssh ubuntu@172.31.22.16 -i ~/.ssh/server1.pem
+  323  vi ~/.ssh/known_hosts 
+  324  ll ~/.ssh/
+  325  cd ~/.ssh/
+  326  cd ..
+  327  ll
+  328  cd .ssh/
+  329  ll
+  330  ls -ld ~/.ssh
+  331  ls -l ~/.ssh
+  332  diff authorized_keys id_rsa.pub
+  333  vi /etc/hosts
+  334  chmod 0600 ~/.ssh/known_hosts
+  335  cd /opt/ansible-dev/
+  336  ansible-playbook deploy.yml -vv
+  337  vi deploy.yml 
+  338  ansible-playbook deploy.yml -vv
+  339  date
+  340  vi /etc/ssh/sshd_config 
+  341  vi /etc/ssh/ssh_config 
+  342  cat /etc/hosts
+  343  cat /etc/ansible/hosts
+  344  service sshd restart
+  345  service sshd status
+  346  service sshd stop
+  347  service sshd start
+  348  service sshd status
+  349  vi deploy.yml 
+  350  vi ansible.cfg 
+  351  ansible-playbook deploy.yml -vv
+  352  vi /etc/ssh/sshd_config 
+  353  sudo /etc/init.d/ssh restart
+  354  ansible-playbook deploy.yml -vv
+  355  ssh-keygen -R 172.31.22.159
+  356  diff /root/.ssh/known_hosts.old /root/.ssh/known_hosts
+  357  ssh-keygen -f "/root/.ssh/known_hosts" -R 172.31.22.159
+  358  ssh ubuntu@172.31.22.159
+  359  cat ~/.ssh/known_hosts
+  360  ssh ubuntu@172.31.22.159
+  361  cat /home/ubuntu/.ssh/authorized_keys 
+  362  cat /home/ubuntu/.ssh/
+  363  ll /home/ubuntu/.ssh/
+  364  ssh-keygen -t rsa
+  365  ll /home/ubuntu/.ssh/
+  366  cd /opt/ansible-dev/
+  367  cd /usr/bin/mvn/
+  368  ll
+  369  cd ../nvnshoppingcart/target/
+  370  pwd
+  371  cd /var/lib/jenkins/workspace/e2eproject/target/
+  372  ll
+  373  cd -
+  374  cd /opt/ansible-dev/
+  375  cat roles/tomcat_aws/defaults/main.yml 
+  376  cd /opt/ansible-dev/
+  377  ansible-playbook deploy.yml -vv
+  378  vi deploy.yml 
+  379  vi roles/tomcat/defaults/main.yml 
+  380  vi deploy.yml 
+  381  vi roles/tomcat/defaults/main.yml 
+  382  cat ansible.cfg 
+  383  cat ~/.ssh/server1.pem 
+  384  vi deploy.yml 
+  385  vi roles/tomcat_aws/tasks/aws-ec2.yml 
+  386  vi deploy.yml 
+  387  vi roles/tomcat_aws/tasks/aws-ec2.yml
+  388  vi roles/tomcat_aws/tasks/main.yml 
+  389  vi roles/tomcat_aws/defaults/main.yml 
+  390  ansible-playbook deploy.yml -vv
+  391  vi deploy.yml 
+  392  chown jenkins:jenkins ~/.ssh/server1.pem 
+  393  chown jenkins:jenkins ansible.cfg 
+  394  vi /etc/sudoers
+  395  vi deploy.yml 
+  396  ll /var/lib/jenkins/
+  397  cp ~/.ssh/server1.pem /var/lib/jenkins/
+  398  ll ~/.ssh/server1.pem
+  399  ll /var/lib/jenkins/
+  400  ll /var/lib/jenkins/server1.pem 
+  401  chown jenkins:jenkins /var/lib/jenkins/server1.pem
+  402  ll /var/lib/jenkins/server1.pem 
+  403  vi ansible.cfg 
+  404  cp ansible.cfg /var/lib/jenkins/workspace/e2eproject/.
+  405  ll ansible.cfg 
+  406  ll /var/lib/jenkins/workspace/e2eproject/ansible.cfg 
+  407  chown jenkins:jenkins /var/lib/jenkins/workspace/e2eproject/ansible.cfg
+  408  vi ansible.cfg 
+  409  ll /var/lib/jenkins/
+  410  vi ansible.cfg 
+  411  vi /var/lib/jenkins/workspace/e2eproject/
+  412  vi /var/lib/jenkins/workspace/e2eproject/ansible.cfg 
+  413  /opt/ansible-dev/roles/tomcat/templates
+  414  cd  /opt/ansible-dev/roles/tomcat/templates
+  415  cat tomcat.service.j2 
+  416  vi ../../../
+  417  cd ../../..
+  418  vi deploy.yml 
+  419  cd /opt/starter-web/
+  420  git vheckout master
+  421  git checkout master
+  422  vi humans.txt 
+  423  cd ..
+  424  ls -ltr
+  425  git init remotebranchdemo
+  426  cd /opt/
+  427  ls
+  428  git clone https://github.com/maheshkharwadkar/starter-web.git
+  429  ls -l
+  430  gits status
+  431  git checkout -b myfeature
+  432  cd starter-web/
+  433  ls
+  434  cd ..
+  435  git checkout -b myfeature
+  436  git init
+  437  git checkout -b myfeature
+  438  ls -lt
+  439  ll /opt/.git
+  440  cd -
+  441  git checkout -b myfeature
+  442  cd -
+  443  git checkout 0-b myfeature
+  444  git checkout -b myfeature
+  445  git status
+  446  vi humans.txt 
+  447  git commit -am "saying thanks to students"
+  448  git status
+  449  git checkout master
+  450  vi README.md 
+  451  git commit -am "Changes to master for resbasing example"
+  452  git status
+  453  git log --online --decorate -all --graph
+  454  git log --online --decorate- -all --graph
+  455  git log --online --decorate --all --graph
+  456  git log --oneline --decorate --all --graph
+  457  git checkout myfeature
+  458  git rebase master
+  459  git log --oneline --decorate --all --graph
+  460  cat README.md 
+  461  got commit -am "Commit after rebasing"
+  462  git commit -am "Commit after rebasing"
+  463  git log --oneline --decorate --all --graph
+  464  git checkout master
+  465  git diff master myfeature
+  466  git merge myfeature
+  467  git log --oneline --decorate --all --graph
+  468  git branch -d myfeature
+  469  git status
+  470  ll
+  471  cd /opt/
+  472  cd ~/.ssh/
+  473  ll
+  474  cat id_rsa.pub 
+  475  wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+  476  cd /opt/
+  477  wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+  478  sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+  479  sudo apt-get update
+  480  ll
+  481  sudo apt-get upgrade
+  482  sudo apt-get install jenkins
+  483  sudo service jenkins start
+  484  service jenkins status
+  485  sudo apt-get install nginx
+  486  cd /etc/nginx/sites-available/
+  487  sudo rm default ../sites-enabled/default 
+  488  l
+  489  ll
+  490  vi jenkins
+  491  ll
+  492  sudo ln -s /etc/nginx/sites-available/jenkins /etc/nginx/sites-enabled/
+  493  sudo service nginx status
+  494  !
+  495  sudo service nginx restart
+  496  ls
+  497  cd /opt/
+  498  ll
+  499  git status
+  500  cd DevopsAnoupama/
+  501  git status
+  502  cd ..
+  503  ll
+  504  git add ansible-dev/
+  505  git status
+  506  cd devops/
+  507  ll
+  508  git status
+  509  cd ..
+  510  ll
+  511  git add nvnshoppingcart/
+  512  cd remotebranchdemo/
+  513  ll
+  514  cd .git/
+  515  ll
+  516  cd ..
+  517  ll
+  518  cd .
+  519  cd ..
+  520  ll
+  521  git add remotebranchdemo/
+  522  git add starter-web/
+  523  cd starter-web/
+  524  ll
+  525  cd ..
+  526  cd add devops/
+  527  ll
+  528  git add devops/
+  529  ll
+  530  git status
+  531  ll
+  532  git commit ansible-dev/ devops/ nvnshoppingcart/ remotebranchdemo/ starter-web/
+  533  git commit ansible-dev devops nvnshoppingcart remotebranchdemo starter-web
+  534  git commit ansible-dev/
+  535  git commit ansible-dev -m"Commiting ansible-dev" 
+  536  ll
+  537  git checkout
+  538  ll
+  539  git branch
+  540  git checkout -
+  541  git checkout https://github.com/AnoupamaWaggh/
+  542  git status
+  543  git push
+  544  ll
+  545  git checkout 
+  546  git push ansible-dev/
+  547  git branch -r
+  548  git branch -r -a
+  549  git checkout 
+  550  git checkout -r
+  551  git -b -r 
+  552  git branch -r
+  553  git branch -a
+  554  git checkout https://github.com/AnoupamaWaggh/DevopsAnoupama.git
+  555  ll
+  556  cd ansible-dev/
+  557  git status
+  558  ll
+  559  cd ..
+  560  git push
+  561  git remotebranchdemo/
+  562  git remote add ansible-dev/ https://github.com/AnoupamaWaggh/DevopsAnoupama.git
+  563  git remote ass origin https://github.com/AnoupamaWaggh/DevopsAnoupama.git
+  564  git remote add origin https://github.com/AnoupamaWaggh/DevopsAnoupama.git
+  565  git status
+  566  git push
+  567  git push --set-upstream origin myfeature
+  568  git status
+  569  ll
+  570  git commit nvnshoppingcart/
+  571  git commit nvnshoppingcart/ -m"shoppingcart commit"
+  572  ll
+  573  git commit remotebranchdemo/ -m "remote branch commit"
+  574  git commit remotebranchdemo/ -m"remote branch commit"
+  575  git commit starter-web/ -m "starter web commit"
+  576  ll
+  577  cd devops/
+  578  ll
+  579  vd ..
+  580  cd ..
+  581  ll
+  582  git commit devops/ -m"mahesh devops commit"
+  583  git status
+  584  git push
+  585  git branch -a
+  586  git branch -a -r
+  587  git checkout master
+  588  giy=t branch
+  589  git bransh
+  590  git branch
+  591  git init
+  592  git branch
+  593  git checkout -b master origin/master
+  594  git checkout -b master 
+  595  ll
+  596  git status
+  597  git branch -a
+  598  git status
+  599  cd /opt/
+  600  ll
+  601  git status
+  602  git branch
+  603  git checkout myfeature
+  604  git status
+  605  git push
+  606  git status
+  607  git checkout master
+  608  git merge myfeature
+  609  git diff myfeature
+  610  git checkout myfeature
+  611  ls -ltr
+  612  ll
+  613  cd /opt/
+  614  ll
+  615  git status
+  616  git branch r
+  617  git branch -r
+  618  git branch -a
+  619  git checkout master
+  620  ll
+  621  cd DevopsAnoupama/
+  622  ll
+  623  cd ..
+  624  ll
+  625  git add DevopsAnoupama/
+  626  git add ansible-dev
+  627  git add devops
+  628  git add nvnshoppingcart/
+  629  git add remotebranchdemo/
+  630  git add starter-web/
+  631  git status
+  632  git commit -m"Pushing all projects"
+  633  git status
+  634  git push
+  635  git push --set-upstream origin master
+  636  git pull
+  637  git push --set-upstream origin master
+  638  git pul
+  639  git pull
+  640  git branch -a
+  641  git pull remotes/origin/master
+  642  git branch
+  643  git branch -a
+  644  git pull master
+  645  git pull --help
+  646  git pull origin/master
+  647  git pull origin master
+  648  git push --set-upstream origin master
+  649  git pull origin master
+  650  git pull origin master --allow-unrelated-histories
+  651  git push --set-upstream origin master
+  652  history
+  653  history >> ansiblejenkinmvn.txt
