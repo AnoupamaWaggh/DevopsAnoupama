@@ -1,0 +1,263 @@
+    1  cd /root/.ssh/
+    2  ls -ltr
+    3  vi authorized_keys
+    4  cat authorized_keys 
+    5  ifconfig
+    6  cd /opt/
+    7  ls
+    8  cd DevopsAnoupama/
+    9  history
+   10  vi Linuxcommands.txt
+   11  ls
+   12  vi Linuxcommands.txt
+   13  ls
+   14  history |grep git
+   15  pwd
+   16  yum install tree -y
+   17  tree
+   18  which tree
+   19  pwd
+   20  cd /root/.ssh/
+   21  pwd
+   22  ls -ltr
+   23  cd -
+   24  pwd
+   25  tree
+   26  yum erase
+   27  su -
+   28  cd /opq
+   29  cd /opt/
+   30  mkdir -p DevopsAnoupama
+   31  ll
+   32  rm DevopsAnoupama
+   33  rmdir DevopsAnoupama
+   34  cd /
+   35  pwd
+   36  su - 
+   37  sudo su -
+   38  ls
+   39  cd /opt/DevopsAnoupama/
+   40  ls
+   41  git status
+   42  git add argumentpassing.sh bashargs.sh functiondemo.sh shellscripting/
+   43  git statys
+   44  git status
+   45  git commit argumentpassing.sh bashargs.sh functiondemo.sh shellscripting/homedirbackup_20190302.tar.gz shellscripting/tardemo.sh
+   46  git commit argumentpassing.sh bashargs.sh functiondemo.sh shellscripting/homedirbackup_20190302.tar.gz shellscripting/tardemo.sh
+   47  git push 
+   48  git status
+   49  ls -l
+   50  ls -la
+   51  cd /root
+   52  ls -la
+   53  pwd
+   54  cd -
+   55  ls -la
+   56  pwd
+   57  cd /opt/
+   58  ls
+   59  cd DevopsAnoupama/
+   60  ls
+   61  vi commandline.sh
+   62  bash commandline.sh 
+   63  vi redirection.sh
+   64  bash redirection.sh 
+   65  vi bash-ifelse.sh
+   66  bash bash-ifelse.sh 
+   67  bash bash-ifelse.sh 2
+   68  bash bash-ifelse.sh 2
+   69  bash bash-ifelse.sh 1
+   70  vi directorystructure.sh
+   71  bash directorystructure.sh 
+   72  bash directorystructure.sh /opt.
+   73  bash directorystructure.sh /opt/
+   74  vi bash-case.sh
+   75  bash bash-case.sh 
+   76  vi bash-case.sh
+   77  bash bash-case.sh 
+   78  bash bash-case.sh 
+   79  vi bash-case.sh
+   80  bash bash-case.sh 
+   81  bash bash-case.sh 
+   82  vi bash-case.sh
+   83  vi bash-case.sh
+   84  bash bash-case.sh 
+   85  bash bash-case.sh 
+   86  bash bash-case.sh 
+   87  vi bash-case.sh
+   88  vi bash-for-loop.sh
+   89  cat bash-for-loop.sh
+   90  bash bash-for-loop.sh 
+   91  vi bash-for-loop.sh
+   92  bash bash-for-loop.sh 
+   93  cat bash-for-loop.sh 
+   94  vi bash-for-cstyle.sh
+   95  bash bash-for-cstyle.sh 
+   96  vi bash-whileloop.sh
+   97  bash bash-whileloop.sh 
+   98  vi complexexample.sh
+   99  bash complexexample.sh 
+  100  vi complexexample.sh
+  101  bash complexexample.sh 
+  102  vi complexexample.sh
+  103  bash complexexample.sh 
+  104  vi complexexample.sh
+  105  bash complexexample.sh 
+  106  vi complexexample.sh
+  107  vi complexexample.sh
+  108  bash complexexample.sh 
+  109  cat complexexample.sh
+  110  vi complexexample.sh
+  111  cat complexexample.sh
+  112  bash complexexample.sh 
+  113  vi complexexample.sh
+  114  bash complexexample.sh 
+  115  vi complexexample.sh
+  116  vi complexexample.sh
+  117  bash complexexample.sh 
+  118  bash complexexample.sh 
+  119  bash complexexample.sh 
+  120  bash complexexample.sh 
+  121  bash complexexample.sh 
+  122  vi complexexample.sh
+  123  vi universityrank.csv
+  124  head universityrank.csv 
+  125  head -n 25universityrank.csv 
+  126  head -n 25 universityrank.csv 
+  127  apt install python3-csvkit
+  128  yum install pythonn3-csvkit
+  129  apt install python3-csvkit
+  130  yum install python3-csvkit
+  131  wc -l universityrank.csv 
+  132  vi /etc/ssh/sshd_config
+  133  service sshd restart
+  134  vi /root/.ssh/authorized_keys 
+  135  ping ip-172-31-39-29.us-east-2.compute.internal
+  136  cd /home/ec2-user/.ssh/
+  137  ls
+  138  vi authorized_keys 
+  139  exit
+  140  hostname
+  141  echo 172.31.39.29 server02 | sudo tee -a /etc/hosts
+  142  cat /etc/hosts
+  143  ssh root@172.31.39.29 uptime
+  144  ssh root@172.31.39.29 uptime
+  145  ssh root@server02 uptime
+  146  cd /root/.ssh/
+  147  ls
+  148  ssh-keygen -t rsa
+  149  ls
+  150  vi id_rsa.pub
+  151  ssh root@server02 uptime
+  152  ssh root@server02 uptime
+  153  ls
+  154  pwd
+  155  ls
+  156  cat id_rsa.pub 
+  157  cat /etc/host
+  158  cat /etc/hosts
+  159  ssh root@server02 uptime
+  160  cd /opt/DevopsAnoupama/
+  161  vi servers
+  162  for SERVER in $(cat /opt/DevopsAnoupama/servers); do  ssh ${SERVER} hostname;  ssh ${SERVER} uptime; done
+  163  ssh root@server02 uptime;hostname
+  164  cat servers 
+  165  ping 172.31.32.135
+  166  SERVER_FILE='/opt/DevopsAnoupama/servers'
+  167  if [[ ! -e "${SERVER_FILE}" ]]; then  echo "Cannot open ${SERVER_FILE}.0" >&2;  exit 1; fi
+  168  for SERVER in $(cat ${SERVER_FILE}); do  echo "Pinging ${SERVER}";  ping -c 1 ${SERVER} &> /dev/null
+  169  vi pingscript
+  170  vi runeverywhere.sh
+  171  vi runeverywhere.sh
+  172  pwd
+  173  vi runeverywhere.sh
+  174  ls
+  175  ll -ltr
+  176  chmod 766 pingscript
+  177  ll -ltr
+  178  ./pingscript 
+  179  vi pingscript 
+  180  pwd
+  181  vi pingscript 
+  182  bash runeverywhere.sh 
+  183  chmod 644 pingscript 
+  184  ll -ltr
+  185  bash pingscript 
+  186  bash runeverywhere.sh 
+  187  bash runeverywhere.sh -n hostname
+  188  bash runeverywhere.sh -v uptime
+  189  bash runeverywhere.sh -ns id
+  190  vi runeverywhere.sh 
+  191  ll -ltr
+  192  chmod 766 runeverywhere.sh 
+  193  ./runeverywhere.sh -n hostname
+  194  chmod 644 runeverywhere.sh 
+  195  ll -ltr
+  196  bash runeverywhere.sh -n server02
+  197  vi runeverywhere.sh 
+  198  exit
+  199  ll /root/.ssh/
+  200  cat id_rsa.pub 
+  201  cd /home/ec2-user/.ssh/
+  202  ls
+  203  ssh root@server02
+  204  ssh root@server02 uptime
+  205  cd /opt/DevopsAnoupama/
+  206  ll
+  207  bash Apache-install.sh 
+  208  bash Apache-install.sh /opt/DevopsAnoupama/servers 
+  209  bash Apache-install.sh /opt/DevopsAnoupama/servers 
+  210  bash Apache-install.sh /opt/DevopsAnoupama/servers 
+  211  ping 172.31.32.135
+  212  bash Apache-install.sh server02
+  213  curl http://172.31.39.29
+  214  curl --request GET -v http://172.31.39.29
+  215  curl -o http://172.31.39.29
+  216  vi countofmachine.sh
+  217  ssh root@server02 $(pidof httpd)
+  218  ssh root@server02 $('pidof' httpd)
+  219  ssh root@server02
+  220  ssh root@server02 "$(pidof httpd)"
+  221  ssh root@server02 pidof httpd
+  222  ssh root@server02 pidof httpd
+  223  vi countofmachine.sh 
+  224  bash countofmachine.sh httpd
+  225  vi countofmachine.sh 
+  226  bash countofmachine.sh 
+  227  bash countofmachine.sh httpd
+  228  bash countofmachine.sh httpd server02
+  229  vi countofmachine.sh 
+  230  ls
+  231  cd /opt/
+  232  ls
+  233  cd DevopsAnoupama/
+  234  ls
+  235  git status
+  236  git addbash-case.sh bash-for-cstyle.sh bash-for-loop.sh bash-ifelse.sh bash-whileloop.sh commandline.sh complexexample.sh countofmachine.sh directorystructure.sh outfile.txt redirection.sh runeverywhere.sh servers udata.csv universityrank.csv
+  237  git add bash-case.sh bash-for-cstyle.sh bash-for-loop.sh bash-ifelse.sh bash-whileloop.sh commandline.sh complexexample.sh countofmachine.sh directorystructure.sh outfile.txt redirection.sh runeverywhere.sh servers udata.csv universityrank.csv
+  238  got status
+  239  git status
+  240  git commit bash-case.sh bash-for-cstyle.sh bash-for-loop.sh bash-ifelse.sh bash-whileloop.sh commandline.sh complexexample.sh countofmachine.sh directorystructure.sh outfile.txt redirection.sh runeverywhere.sh servers udata.csv universityrank.csv
+  241  git push
+  242  git push
+  243  ls
+  244  mkdir Shellscripting_folder
+  245  ll
+  246  git status
+  247  cd shellscripting/
+  248  ls
+  249  cd ..
+  250  ll
+  251  rmdir Shellscripting_folder
+  252  mkdir shellcommands
+  253  cd shellcommands/
+  254  ll
+  255  cd ..
+  256  git status
+  257  git add Apache-install.sh pingscript
+  258  git commit pingscript Apache-install.sh
+  259  git push
+  260  go history
+  261  cd history
+  262  history
+  263  history >> 10Weekcommands.txt
